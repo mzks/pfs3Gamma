@@ -2,14 +2,15 @@
 // PrimaryGenerator.cc
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #include "PrimaryGenerator.hh"
-#include "G4ParticleGun.hh"
+#include "PltParticleGun.hh"
+//#include "G4ParticleGun.hh"
 
 //------------------------------------------------------------------------------
   PrimaryGenerator::PrimaryGenerator()
   : fpParticleGun(0) 
 //------------------------------------------------------------------------------
 {
-  fpParticleGun = new G4ParticleGun();
+  fpParticleGun = new PltParticleGun();
 }
 
 //------------------------------------------------------------------------------

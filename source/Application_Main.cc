@@ -8,8 +8,8 @@
 #include "G4UImanager.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-#include "LBE.hh"
-//#include "QGSP_BERT.hh"
+//#include "LBE.hh"
+#include "QGSP_BERT.hh"
 
 //-------------------------------------------------------------------------------
   int main( int argc, char** argv )
@@ -31,8 +31,8 @@
    runManager->SetUserInitialization( new Geometry );
 
 // Set up mandatory user initialization: Physics-List
-   runManager->SetUserInitialization( new LBE );
-   //runManager->SetUserInitialization( new QGSP_BERT );
+   //runManager->SetUserInitialization( new LBE );
+   runManager->SetUserInitialization( new QGSP_BERT );
 
 // Set up user initialization: User Actions
    runManager->SetUserInitialization( new UserActionInitialization );
